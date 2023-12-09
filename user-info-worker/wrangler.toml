@@ -1,0 +1,5 @@
+name = "user-info-worker"
+main = "src/index.js"
+compatibility_date = "2023-12-06"
+[vars]
+R2_SUBDOMAIN = "pub-93f19acb56624788988e2d74522559f9"

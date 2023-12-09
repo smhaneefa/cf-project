@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  tunnel:
+    container_name: cloudflared-tunnel
+    image: cloudflare/cloudflared
+    restart: unless-stopped
+    command: tunnel run
+    environment:
+      - TUNNEL_TOKEN=
+
+networks:
+  default:
+    external: true
+    name: nginx-network
